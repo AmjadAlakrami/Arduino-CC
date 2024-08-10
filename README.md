@@ -10,10 +10,9 @@ Den här guiden hjälper dig steg för steg att komma igång med din ESP8266 och
 5. [Installera ESP8266-stöd i Arduino IDE](#installera-esp8266-stöd-i-arduino-ide)
 6. [Anslut ESP8266 till din dator](#anslut-esp8266-till-din-dator)
 7. [Ladda upp din första kod till ESP8266](#ladda-upp-din-första-kod-till-esp8266)
-8. [Felsökning](#felsökning)
 
 ## Vad är ESP8266?
-ESP8266 är en billig och kraftfull mikrokontroller med inbyggt Wi-Fi, utvecklad av Espressif Systems. Den används ofta för att skapa IoT (Internet of Things)-projekt, eftersom den kan ansluta till internet och kommunicera med andra enheter. Trots sitt lilla format har ESP8266 tillräckligt med kapacitet för att hantera olika uppgifter som styrning av sensorer, aktivera reläer och kommunicera med webbtjänster.
+ESP8266 är en kraftfull mikrokontroller med inbyggt Wi-Fi. En mikrokontroller är en liten dator som innehåller en processor (CPU), minne och in- och utgångar. Den är designad för att styra andra enheter och utföra specifika uppgifter, som att läsa sensorer eller styra motorer och lampor mm.
 
 ## Vad är Arduino IDE?
 Arduino IDE (Integrated Development Environment) är ett användarvänligt programmeringsverktyg som används för att skriva, kompilera och ladda upp kod till Arduino-kompatibla mikrokontroller, inklusive ESP8266. Det är särskilt utformat för nybörjare, med ett enkelt gränssnitt och många exempel och bibliotek som gör det enkelt att komma igång med hårdvaruprogrammering. Arduino IDE stöder flera programmeringsspråk, men använder främst en variant av C++.
@@ -22,8 +21,8 @@ Arduino IDE (Integrated Development Environment) är ett användarvänligt progr
 
 För att komma igång behöver du följande:
 - En dator (Windows, macOS eller Linux)
-- En USB-kabel (micro USB till USB, beroende på vilken version av ESP8266 du har)
-- Ett ESP8266-utvecklingskort (t.ex. NodeMCU eller WeMos D1 Mini)
+- En USB-kabel
+- Ett ESP8266-utvecklingskort
 - Arduino IDE (gratis programvara för att programmera din ESP8266)
 
 ## Installera Arduino IDE
@@ -60,11 +59,4 @@ Nu ska vi ladda upp ett enkelt exempel som blinkar en LED på ditt ESP8266-kort.
 4. Vänta medan koden kompileras och laddas upp. Du ser en status längst ner i Arduino IDE-fönstret.
 5. Om allt fungerar som det ska kommer LED-lampan på ditt ESP8266-kort att börja blinka.
 
-## Felsökning
-
-Om du stöter på problem, här är några vanliga lösningar:
-
-- **Arduino IDE hittar inte porten**: Kontrollera att USB-kabeln är korrekt ansluten och att drivrutinerna för ditt ESP8266-kort är installerade.
-- **Felmeddelande vid uppladdning**: Försök att trycka på `Flash`-knappen på ESP8266-kortet och försök ladda upp koden igen.
-- **Ingen LED blinkar**: Kontrollera att du valt rätt kort och port under `Verktyg` > `Kort` och `Verktyg` > `Port`.
 
