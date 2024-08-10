@@ -3,12 +3,20 @@
 Den här guiden hjälper dig steg för steg att komma igång med din ESP8266 och Arduino IDE, även om du aldrig har programmerat eller använt Arduino förut.
 
 ## Innehållsförteckning
-1. [Vad du behöver](#vad-du-behöver)
-2. [Installera Arduino IDE](#installera-arduino-ide)
-3. [Installera ESP8266-stöd i Arduino IDE](#installera-esp8266-stöd-i-arduino-ide)
-4. [Anslut ESP8266 till din dator](#anslut-esp8266-till-din-dator)
-5. [Ladda upp din första kod till ESP8266](#ladda-upp-din-första-kod-till-esp8266)
-6. [Felsökning](#felsökning)
+1. [Vad  är ESP8266](#vad-är-esp8266)
+2. [Vad är Arduino IDE](#vad-är-arduino-ide)
+3. [Vad du behöver](#vad-du-behöver)
+4. [Installera Arduino IDE](#installera-arduino-ide)
+5. [Installera ESP8266-stöd i Arduino IDE](#installera-esp8266-stöd-i-arduino-ide)
+6. [Anslut ESP8266 till din dator](#anslut-esp8266-till-din-dator)
+7. [Ladda upp din första kod till ESP8266](#ladda-upp-din-första-kod-till-esp8266)
+8. [Felsökning](#felsökning)
+
+## Vad är ESP8266?
+ESP8266 är en billig och kraftfull mikrokontroller med inbyggt Wi-Fi, utvecklad av Espressif Systems. Den används ofta för att skapa IoT (Internet of Things)-projekt, eftersom den kan ansluta till internet och kommunicera med andra enheter. Trots sitt lilla format har ESP8266 tillräckligt med kapacitet för att hantera olika uppgifter som styrning av sensorer, aktivera reläer och kommunicera med webbtjänster.
+
+## Vad är Arduino IDE?
+Arduino IDE (Integrated Development Environment) är ett användarvänligt programmeringsverktyg som används för att skriva, kompilera och ladda upp kod till Arduino-kompatibla mikrokontroller, inklusive ESP8266. Det är särskilt utformat för nybörjare, med ett enkelt gränssnitt och många exempel och bibliotek som gör det enkelt att komma igång med hårdvaruprogrammering. Arduino IDE stöder flera programmeringsspråk, men använder främst en variant av C++.
 
 ## Vad du behöver
 
