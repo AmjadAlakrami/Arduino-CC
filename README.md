@@ -116,6 +116,6 @@ använd koden i den tidigare övning, gör de ändringar som krävs för att få
 
 ### Blinka morsekod
 använd koden i den tidigare övning, gör de ändringar som krävs för att få lampan att blinka morsekod. Nedan finns en bild på morsekod alfabetet. 
-![alt text](![image](https://github.com/user-attachments/assets/f0e0d16c-8ffe-437d-92c8-ca693a974772)
+(![image](https://github.com/user-attachments/assets/f0e0d16c-8ffe-437d-92c8-ca693a974772)
 
 
