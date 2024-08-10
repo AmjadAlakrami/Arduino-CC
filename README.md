@@ -10,6 +10,11 @@ Den här guiden hjälper dig steg för steg att komma igång med din ESP8266 och
 5. [Installera ESP8266-stöd i Arduino IDE](#installera-esp8266-stöd-i-arduino-ide)
 6. [Anslut ESP8266 till din dator](#anslut-esp8266-till-din-dator)
 7. [Ladda upp din första kod till ESP8266](#ladda-upp-din-första-kod-till-esp8266)
+8. [Övningar](#övningar)
+   - [Tänd en LED-lampa](#tänd-en-led-lampa)
+   - [Få lampan att blinka](#få-lampan-att-blinka)
+   - [Blinka morsekod](#blinka-morsekod)
+   - [Blinka snabbt/långsamt](#blinka-snabbt-långsamt)
 
 ## Vad är ESP8266?
 ESP8266 är en kraftfull mikrokontroller med inbyggt Wi-Fi. En mikrokontroller är en liten dator som innehåller en processor (CPU), minne och in- och utgångar. Den är designad för att styra andra enheter och utföra specifika uppgifter, som att läsa sensorer eller styra motorer och lampor mm.
@@ -58,5 +63,59 @@ Nu ska vi ladda upp ett enkelt exempel som blinkar en LED på ditt ESP8266-kort.
 3. Klicka på `Pilen` (ladda upp) i övre vänstra hörnet för att kompilera och ladda upp koden till ditt ESP8266-kort.
 4. Vänta medan koden kompileras och laddas upp. Du ser en status längst ner i Arduino IDE-fönstret.
 5. Om allt fungerar som det ska kommer LED-lampan på ditt ESP8266-kort att börja blinka.
+
+## Övningar
+
+### Tänd en LED-lampa
+
+I den här övningen lär du dig att tända en extern LED-lampa som är kopplad till en GPIO-pin på ditt ESP8266-kort.
+
+**Kopplingsschema:**
+- Anslut LED-lampans positiva ben (den längre) till GPIO5 (D1 på de flesta ESP8266-kort).
+- Anslut LED-lampans negativa ben (den kortare) till en 220Ω resistor.
+- Anslut resistorns andra ände till GND på ESP8266.
+
+**Kod:**
+
+```cpp
+#define LED_PIN 5 // pin D1
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT); // Ställer in den valda pinnen som utgång
+}
+
+void loop() {
+  digitalWrite(LED_PIN, HIGH); // Tänd LED-lampan
+}
+```
+
+Ladda upp denna kod till ditt ESP8266-kort. LED-lampan kommer att tändas och förbli tänd.
+
+### Få lampan att blinka
+I den här övningen ska vi få den externa LED-lampan att blinka med ett enkelt program.
+
+**Kod:**
+
+```cpp
+#define LED_PIN 5 // pin D1
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT); // Ställer in den valda pinnen som utgång
+}
+
+void loop() {
+  digitalWrite(LED_PIN, HIGH); // Tänd LED-lampan
+  delay(1000);                  // Vänta i 1 sekund
+  digitalWrite(LED_PIN, LOW);   // Släck LED-lampan
+  delay(1000);                  // Vänta i 1 sekund
+}
+```
+
+### Blinka snabbt/långsamt
+använd koden i den tidigare övning, gör de ändringar som krävs för att få lampan att tändas och slackas snabbare/långsamre.
+
+### Blinka morsekod
+använd koden i den tidigare övning, gör de ändringar som krävs för att få lampan att blinka morsekod. Nedan finns en bild på morsekod alfabetet. 
+![alt text](![image](https://github.com/user-attachments/assets/f0e0d16c-8ffe-437d-92c8-ca693a974772)
 
 
