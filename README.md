@@ -15,6 +15,7 @@ Den här guiden hjälper dig steg för steg att komma igång med din ESP8266 och
    - [Få lampan att blinka](#få-lampan-att-blinka)
    - [Blinka morsekod](#blinka-morsekod)
    - [Blinka snabbt/långsamt](#blinka-snabbt-långsamt)
+   - [Fade in Fade Out](#fade-in-fade-out)
 
 ## Vad är ESP8266?
 ESP8266 är en kraftfull mikrokontroller med inbyggt Wi-Fi. En mikrokontroller är en liten dator som innehåller en processor (CPU), minne och in- och utgångar. Den är designad för att styra andra enheter och utföra specifika uppgifter, som att läsa sensorer eller styra motorer och lampor mm.
@@ -145,7 +146,8 @@ void loop() {
     analogWrite(LED_PIN, i); // Minska LED-lampans ljusstyrka
     delay(10); // Lägg till en fördröjning för att se fade-effekten
   }
-}```
+}
+```
 
 
 
