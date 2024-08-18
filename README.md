@@ -120,3 +120,32 @@ använd koden i den tidigare övning, gör de ändringar som krävs för att få
 ![image](https://github.com/user-attachments/assets/edd9f997-c751-4496-bccb-3bf96a43ee43)
 
 
+### Fade in Fade Out
+I den här övningen ska vi få den externa LED-lampan att Fadea in och out
+
+
+**Kod:**
+
+```cpp
+#define LED_PIN 5 // Pin D1
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT); // Sätt den valda pinnen som utgång
+}
+
+void loop() {
+  // Öka ljusstyrkan från 0 till 255
+  for(int i = 0; i <= 255; i++){
+    analogWrite(LED_PIN, i); // Öka LED-lampans ljusstyrka
+    delay(10); // Lägg till en fördröjning för att se fade-effekten
+  }
+  
+  // Minska ljusstyrkan från 255 till 0
+  for(int i = 255; i >= 0; i--){
+    analogWrite(LED_PIN, i); // Minska LED-lampans ljusstyrka
+    delay(10); // Lägg till en fördröjning för att se fade-effekten
+  }
+}```
+
+
+
