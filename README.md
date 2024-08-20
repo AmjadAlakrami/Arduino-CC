@@ -228,15 +228,15 @@ void loop() {
 
 ### Utmaningar:
 
-Här finns lite mer utmanande övningar som endast kräver användandet av tidigare funktioner och lite kreativitet.
-För varje utmaning ni lyckas lösa får ni poäng till skattjakten. Lycka till!
+Här finns lite mer utmanande övningar som kräver lite fler funktioner än dem som använts hittils. Tips är att googlea eller bara fråga någon fadder! Det finns lite frihet i dessa utmaningarna så det är fritt fram att göra som ni vill.
+För varje utmaning ni lyckas lösa får ni poäng till poängjakten så se till att visa er lösning för någon ansvarigfadder. Lycka till!
 
 - Få lampor att blinka i sekvens.
-- Få en slumpvis lampa att blinka varje gång du trycker på en knapp (samma knapp).
+- Få en slumpvis lampa att blinka varje gång du trycker på en knapp (samma knapp). _Tips: Använda random funktionen_
 - Bygg ett trafikljus. Det blir grönt när du trycker på en knapp.
 
 - Räkna binärt upp till 15 genom att trycka på en knapp.
-- Reaktionstidtestare. Bygg en reaktionstidtestare genom att kombinera LEDs och en knapp. Ni ska ge feedback på reaktionstiden genom att låta antingen en röd eller grön lampa lysa beroende på reaktionstiden.
+- Reaktionstidtestare. Bygg en reaktionstidtestare genom att kombinera LEDs och en knapp. Ni ska ge feedback på reaktionstiden genom att låta antingen en röd eller grön lampa lysa beroende på reaktionstiden. _Tips: Använd millis-funktionen för tiden_
 - Morsekod-omvandlare. Ni ska kunna skriva en valfri text och låta programmet omvandla det till Morsekod. Morsekoden ska sedan visas genom en lampa.
 
 
