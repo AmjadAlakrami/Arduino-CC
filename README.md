@@ -154,6 +154,41 @@ void loop() {
 }
 ```
 
+### Lampbrytare
+Här får ni testa att tända och släcka en LED med en knapp. När knappen trycks så växlas LEDen från tänt till släckt eller vice versa.
+Koppla enligt nedan:
+
+Ladda sedan upp koden nedan och testa:
+```cpp
+int buttonPin = D2;  // Knapp ansluten till D2 (GPIO4)
+int ledPin = D1;     // LED ansluten till D1 (GPIO5)
+int buttonState = 0; // Variabel för att lagra knappens tillstånd
+int lastButtonState = 0; // Variabel för att lagra föregående knappens tillstånd
+int ledState = LOW;  // Variabel för att lagra LED-lampans tillstånd
+
+void setup() {
+  pinMode(buttonPin, INPUT);  // Sätt knapp-pinnen som ingång
+  pinMode(ledPin, OUTPUT);    // Sätt LED-pinnen som utgång
+  digitalWrite(ledPin, ledState); // Sätt initialt LED-lampans tillstånd till LOW
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);  // Läs knappens tillstånd
+
+  // Kontrollera om knappen har tryckts in (ändring från låg till hög)
+  if (buttonState != lastButtonState) {
+    if (buttonState == HIGH) {
+      // Växla LED-lampans tillstånd
+      ledState = !ledState;
+      digitalWrite(ledPin, ledState); // Sätt LED-lampans tillstånd
+    }
+    delay(50); // Debounce-fördröjning för att undvika felaktiga avläsningar
+  }
+  
+  lastButtonState = buttonState; // Spara nuvarande knappens tillstånd
+}
+```
+
 ### Läs av en analog ingång
 Härnäst ska vi testa att läsa av värdet på en analog spänning, i detta fall från en potentiometer.
 Genom att koppla potentiometern till 3 Volt och jord så kan vi styra spänningen på utgången genom att rotera vredet. 
@@ -187,7 +222,8 @@ void loop() {
 }
 ```
 
-## Utmaningar:
+
+### Utmaningar:
 
 Här finns lite mer utmanande övningar som endast kräver användandet av tidigare funktioner och lite kreativitet.
 För varje utmaning ni lyckas lösa får ni poäng till skattjakten. Lycka till!
