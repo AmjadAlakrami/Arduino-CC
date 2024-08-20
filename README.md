@@ -52,7 +52,7 @@ Klicka på `OK`.
 ## Anslut ESP8266 till din dator
 
 1. Anslut din ESP8266 till datorn med USB-kabeln.
-2. I Arduino IDE, gå till `Verktyg` > `Kort: "xxx"` och välj ditt ESP8266-kort (t.ex. "NodeMCU 1.0" eller "WeMos D1 R2 & mini").
+2. I Arduino IDE, gå till `Verktyg` > `Kort: "xxx"` och välj ditt ESP8266-kort, "NodeMCU 1.0"
 3. Gå till `Verktyg` > `Port` och välj den port som ditt ESP8266-kort är anslutet till (vanligtvis COM3, COM4, etc. på Windows eller `/dev/cu.usbserial-xxxx` på macOS).
 
 ## Ladda upp din första kod till ESP8266
