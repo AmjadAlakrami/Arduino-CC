@@ -158,7 +158,10 @@ void loop() {
 Här får ni testa att tända och släcka en LED med en knapp. När knappen trycks så växlas LEDen från tänt till släckt eller vice versa.
 Koppla enligt nedan:
 
+![image](toggleButton.png)
+
 Ladda sedan upp koden nedan och testa:
+
 ```cpp
 int buttonPin = D2;  // Knapp ansluten till D2 (GPIO4)
 int ledPin = D1;     // LED ansluten till D1 (GPIO5)
