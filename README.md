@@ -16,6 +16,7 @@ Den här guiden hjälper dig steg för steg att komma igång med din ESP8266 och
    - [Blinka morsekod](#blinka-morsekod)
    - [Blinka snabbt/långsamt](#blinka-snabbt-långsamt)
    - [Fade in Fade Out](#fade-in-fade-out)
+9. [Utmaningar](#utmaningar)
 
 ## Vad är ESP8266?
 ESP8266 är en kraftfull mikrokontroller med inbyggt Wi-Fi. En mikrokontroller är en liten dator som innehåller en processor (CPU), minne och in- och utgångar. Den är designad för att styra andra enheter och utföra specifika uppgifter, som att läsa sensorer eller styra motorer och lampor mm.
@@ -186,15 +187,18 @@ void loop() {
 }
 ```
 
-**Utmaningar:**
+## Utmaningar:
+
 Här finns lite mer utmanande övningar som endast kräver användandet av tidigare funktioner och lite kreativitet.
-Lycka till!
+För varje utmaning ni lyckas lösa får ni poäng till skattjakten. Lycka till!
 
 - Få lampor att blinka i sekvens.
-- Få olika lampor att lysa varje gång du trycker på en knapp (samma knapp).
+- Få en slumpvis lampa att blinka varje gång du trycker på en knapp (samma knapp).
 - Bygg ett trafikljus. Det blir grönt när du trycker på en knapp.
 
-- Räkna binärt genom att trycka på en knapp.
+- Räkna binärt upp till 15 genom att trycka på en knapp.
+- Reaktionstidtestare. Bygg en reaktionstidtestare genom att kombinera LEDs och en knapp. Ni ska ge feedback på reaktionstiden genom att låta antingen en röd eller grön lampa lysa beroende på reaktionstiden.
+- Morsekod-omvandlare. Ni ska kunna skriva en valfri text och låta programmet omvandla det till Morsekod. Morsekoden ska sedan visas genom en lampa.
 
 
 
