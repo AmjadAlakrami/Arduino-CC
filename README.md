@@ -72,9 +72,11 @@ Nu ska vi ladda upp ett enkelt exempel som blinkar en LED på ditt ESP8266-kort.
 I den här övningen lär du dig att tända en extern LED-lampa som är kopplad till en GPIO-pin på ditt ESP8266-kort.
 
 **Kopplingsschema:**
-- Anslut LED-lampans positiva ben (den längre) till GPIO5 (D1 på de flesta ESP8266-kort).
-- Anslut LED-lampans negativa ben (den kortare) till en 220Ω resistor.
+- Anslut LED-lampans positiva ben (det *längre*) till D1.
+- Anslut LED-lampans negativa ben (det *kortare*) till en 205Ω resistor.
 - Anslut resistorns andra ände till GND på ESP8266.
+![alt text](enkelLed.png)
+
 
 **Kod:**
 
