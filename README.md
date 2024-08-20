@@ -75,7 +75,7 @@ I den här övningen lär du dig att tända en extern LED-lampa som är kopplad 
 - Anslut LED-lampans positiva ben (det *längre*) till D1.
 - Anslut LED-lampans negativa ben (det *kortare*) till en 205Ω resistor.
 - Anslut resistorns andra ände till GND på ESP8266.
-![alt text](enkelLed.png)
+![image](enkelLed.png)
 
 
 **Kod:**
@@ -115,10 +115,12 @@ void loop() {
 ```
 
 ### Blinka snabbt/långsamt
-använd koden i den tidigare övning, gör de ändringar som krävs för att få lampan att tändas och slackas snabbare/långsamre.
+Använd koden från den tidigare övningen, gör de ändringar som krävs för att få lampan att tändas och slackas snabbare/långsammare.
 
 ### Blinka morsekod
-använd koden i den tidigare övning, gör de ändringar som krävs för att få lampan att blinka morsekod. Nedan finns en bild på morsekod alfabetet. 
+Nu ska du blinka `sommar och sol` (allas favoritlåt) i morsekod på LED:en. 
+
+Kodningstabell för morsekod visas nedan.
 
 ![image](https://github.com/user-attachments/assets/edd9f997-c751-4496-bccb-3bf96a43ee43)
 
