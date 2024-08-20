@@ -153,5 +153,40 @@ void loop() {
 }
 ```
 
+### Läs av en analog ingång
+Härnäst ska vi testa att läsa av värdet på en analog spänning, i detta fall från en potentiometer.
+Genom att koppla potentiometern till 3 Volt och jord så kan vi styra spänningen på utgången genom att rotera vredet. 
+Vårt är här att läsa av den spänningen. 
+**Kopplingsschema:**
+- Koppla potentiometerns övre ben till 3 volt (3V) på ESP8266
+- Koppla potentiometerns nedre ben till jord (GND) på ESP8266
+- Koppla potentiometers mittersta ben till A0 på ESP8266.
+
+**KONTROLLERA ATT ER KOPPLING ÄR KORREKT INNAN NI FORTSÄTTER**
+![image](readPotentio.png)
+
+Nu är idén att ni ska återspegla/mappa värdet som läses av från potentiometern till LEDens ljusstyrka.
+
+*Tips: Värdet på potentiometern är mellan 0-1023 men ledstyrkan anges mellan 0-255.*
+
+**Kod:**
+```cpp
+int potPin = A0;     // Potentiometer ansluten till A0
+int ledPin = D1;     // LED ansluten till D1 (GPIO5)
+int potValue = 0;    // Variabel för att lagra potentiometer-värdet
+int ledBrightness = 0; // Variabel för att lagra LED-ljusstyrkan
+
+void setup() {
+  pinMode(ledPin, OUTPUT);  // Sätt LED-pinnen som utgång
+}
+
+void loop() {
+  potValue = analogRead(potPin);           // Läs potentiometer-värdet (0-1023)
+  // FYLL I RESTEN SJÄLVA!
+}
+```
+  
+
+
 
 
