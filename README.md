@@ -185,7 +185,18 @@ void loop() {
   // FYLL I RESTEN SJÄLVA!
 }
 ```
-  
+
+**Utmaningar:**
+Här finns lite mer utmanande övningar som endast kräver användandet av tidigare funktioner och lite kreativitet.
+Lycka till!
+
+- Få lampor att blinka i sekvens.
+- Få olika lampor att lysa varje gång du trycker på en knapp (samma knapp).
+- Bygg ett trafikljus. Det blir grönt när du trycker på en knapp.
+
+- Räkna binärt genom att trycka på en knapp.
+
+
 
 
 
