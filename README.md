@@ -84,7 +84,7 @@ I den här övningen lär du dig att tända en extern LED-lampa som är kopplad 
 **Kod:**
 
 ```cpp
-#define LED_PIN 5 // pin D1
+int LED_PIN = D1;
 
 void setup() {
   pinMode(LED_PIN, OUTPUT); // Ställer in den valda pinnen som utgång
@@ -103,7 +103,7 @@ I den här övningen ska vi få den externa LED-lampan att blinka med ett enkelt
 **Kod:**
 
 ```cpp
-#define LED_PIN 5 // pin D1
+int LED_PIN = D1;
 
 void setup() {
   pinMode(LED_PIN, OUTPUT); // Ställer in den valda pinnen som utgång
@@ -135,7 +135,7 @@ I den här övningen ska vi få den externa LED-lampan att Fadea in och out
 **Kod:**
 
 ```cpp
-#define LED_PIN 5 // Pin D1
+int LED_PIN = D1;
 
 void setup() {
   pinMode(LED_PIN, OUTPUT); // Sätt den valda pinnen som utgång
