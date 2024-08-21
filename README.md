@@ -16,6 +16,8 @@ Den här guiden hjälper dig steg för steg att komma igång med din ESP8266 och
    - [Blinka morsekod](#blinka-morsekod)
    - [Blinka snabbt/långsamt](#blinka-snabbt-långsamt)
    - [Fade in Fade Out](#fade-in-fade-out)
+   - [Lampbrytare](#lampbrytare)
+   - [Läs av en analog ingång](#läs-av-en-analog-ingång)
 9. [Utmaningar](#utmaningar)
 
 ## Vad är ESP8266?
